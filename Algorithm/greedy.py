@@ -34,3 +34,30 @@ result += count * first
 result += (m - count) * second
 
 print(result)
+
+
+###2###
+n, m = map(int, input().split())
+
+result = 0
+for i in range(n):
+  data = map(int, input().split())
+  min_value = min(data)
+
+  result = max(result, min_value)
+
+print(result)
+
+###3###
+N, k = map(int, input().split( ))
+
+count=0
+while N!=1:
+  if N%k ==0:
+    N = N//k
+    count +=1
+  else:
+    N=N-1
+    count +=1
+
+print(count)
